@@ -130,3 +130,67 @@ index = 0
 while index < len(animals):
     print(animals[index])
     index += 1
+
+#sorting and ranges
+#sorted sirve para ordenar una lista, aquí
+#se ordenó de manera alfabética
+animals = ['man', 'bear', 'pig']
+sorted_animals = sorted(animals)
+print('Animals list:       {}'.format(animals))
+print('sorted animals list:   {}'.format(sorted_animals))
+animals.sort()
+print('animals after sort method:   {}'.format(animals))
+
+#concatenar listas
+animals = ['man', 'horse']
+more_animals = ['cat', 'dog']
+all_animals = animals + more_animals
+print(all_animals)
+
+#saber el tamaño de una lista
+
+animals = ['man', 'bear', 'pig']
+print(len(animals))
+animals.append('cow') #se añade un elemento nuevo a la lista
+print(len(animals))
+
+#ranges
+""" la función range() retorna una sucesión de 
+números enteros. Cuando se le pasa un único argumento n.
+La sucesión empieza desde el 0 y culmina en el n-1"""
+for number in range (3):
+    print(number)
+
+#se puede especificar tanto el start como el stop
+for number in range(1,3):
+    print(number)
+
+#cuando se especifican dos elementos
+#el primero pasa a indicar el inicio y el segundo el stop
+
+#un tercer argumento indica el intervalo entre dos números de la 
+#sucesión resultante, si no se especifica un intervalo,
+#el valor por default es 1
+for number in range (1,10,2):
+    print(number)
+
+#range func con una lista
+animals = ['man', 'bear', 'pig', 'cow',
+'duck', 'horse', 'dog']
+for number in range (0, len(animals), 2):
+    print(animals[number])
+
+
+"""What you will learn
+-dictionaries
+-creating
+-adding and removing items
+-searching
+-nesting
+-looping"""
+
+"""Los diccionarios hold key-value pairs called items
+AKA associative arrays, hash tables and hashes"""
+#dictionary_name = {key_1:value_1, key_N: value_N}
+#dictionary_name = {}
+#dictionary_name[key]
